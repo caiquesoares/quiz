@@ -1,0 +1,168 @@
+/*FONTS*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
+}
+/*CORES*/
+/*ESPACAMENTOS*/
+/*BORDAS*/
+/*DEGRADE*/
+.var-degrade {
+  background: #DA4453;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #89216B, #DA4453);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #89216B, #DA4453);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+object {
+  width: 100%;
+  height: auto;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background: #DA4453;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #89216B, #DA4453);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #89216B, #DA4453);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  position: relative;
+}
+#content {
+  border-radius: 4px;
+  background: #fff;
+  padding: 15px 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #b0325f;
+  font-weight: 600 !important;
+  text-shadow: 1px 1px 1px #b0325f;
+}
+footer {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 15px;
+}
+header {
+  padding: 15px 20px;
+}
+header .logo {
+  padding: 15px 20px;
+  text-align: center;
+}
+header .logo img {
+  display: inline-block;
+}
+header .menu nav {
+  width: 100%;
+  text-align: center;
+}
+header .menu nav ul {
+  padding-left: 0px;
+  list-style: none;
+  margin-bottom: 0;
+}
+header .menu nav ul li {
+  display: inline-block;
+}
+header .menu nav ul li a {
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+}
+header .menu nav ul li a:hover {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+header .acessar nav {
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  text-align: center;
+}
+header .acessar nav ul {
+  padding-left: 0px;
+  list-style: none;
+  margin-bottom: 0;
+}
+header .acessar nav ul li {
+  display: inline-block;
+}
+header .acessar nav ul li a {
+  padding: 5px 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+header .acessar nav ul li a:hover {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  background: #fff;
+  color: #b0325f;
+}
+#home #texto-home {
+  padding: 15px 20px;
+  text-align: center;
+}
