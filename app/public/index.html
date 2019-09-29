@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="content/dist/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <script src="content/dist/js/angular.js"></script>
+    <script src="content/dist/js/quizApp/app.quiz.module.js"></script>
+    <script src="content/dist/js/quizApp/quiz/quiz.module.js"></script>
+    <script src="content/dist/js/quizApp/quiz/quiz.component.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="content/dist/js/main.js"></script>
 </head>
-<body>
+<body ng-app="quizApp">
     <div data-include="includes/header"></div>
     <div class="container">
         <div id="content">
+            <quiz></quiz>
             <div data-include="pages/home"></div>
         </div>
     </div>
     <div data-include="includes/footer"></div>
 </body>
 </html>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ad aut blanditiis commodi distinctio dolorem facilis ipsa molestiae nostrum obcaecati quidem quis quos rem, sed sint sunt tempore vitae voluptatem.
