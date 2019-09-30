@@ -46,12 +46,7 @@
 /*BORDAS*/
 /*DEGRADE*/
 .var-degrade {
-  background: #DA4453;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #89216B, #DA4453);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #89216B, #DA4453);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ddd !important;
 }
 object {
   width: 100%;
@@ -60,12 +55,7 @@ object {
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: #DA4453;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #89216B, #DA4453);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #89216B, #DA4453);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #ddd !important;
 }
 a,
 a:hover {
@@ -161,6 +151,10 @@ header .acessar nav ul li a:hover {
   text-decoration: none;
   background: #fff;
   color: #b0325f;
+}
+#home #carousel {
+  margin: 10px -20px 0;
+  border-radius: 4px 4px 0 0;
 }
 #home #texto-home {
   padding: 15px 20px;
