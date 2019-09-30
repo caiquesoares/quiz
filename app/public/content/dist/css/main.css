@@ -149,7 +149,7 @@ header .acessar nav ul li a:hover {
   border: 1px solid #fff;
   border-radius: 4px;
   text-decoration: none;
-  background: #fff;
+  background: #ddd;
   color: #b0325f;
 }
 #home #carousel {
@@ -159,4 +159,46 @@ header .acessar nav ul li a:hover {
 #home #texto-home {
   padding: 15px 20px;
   text-align: center;
+}
+#quiz .numQuestoes {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+#quiz .numQuestoes ul {
+  padding-left: 0px;
+  margin-bottom: 0;
+  list-style: none;
+  display: inline-block;
+}
+#quiz .numQuestoes ul li {
+  display: inline-block;
+  background: #ddd;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin: 5px 10px;
+}
+#quiz .numQuestoes ul li.ativa {
+  background: #b0325f;
+}
+#quiz .questao {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+}
+#quiz .questao .pergunta {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#quiz .questao .opcoes button {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
 }
