@@ -5,6 +5,7 @@ angular.module('quiz', [])
             let self = this;
             $scope.pontosTotalizados = 0;
             $scope.numAtivada = 1;
+            $scope.aparecerQuestao = true;
             this.carregarQuestoes = function(){
                 $scope.questoes = [
                     {
@@ -112,13 +113,19 @@ angular.module('quiz', [])
                 return numQuestoes;
             }
 
-            $scope.questaoAtiva = function(questao){
-
+            $scope.transicaoQuestao = function(questao){
+                $scope.aparecerQuestao = false;
+                $scope.mensagemResposta = 'AGUARDANDO PRÓXIMA QUESTÃO';
                 $timeout(function(){
+                    $scope.questaoAtiva(questao);
+                    $scope.aparecerQuestao = true;
+                }, 3000);
+            }
+
+            $scope.questaoAtiva = function(questao){
                     $scope.questaoAtivada = $scope.questoes[questao - 1 ]
                     $scope.numAtivada = questao;
                     return $scope.questaoAtivada;
-                }, 3000);
             }
             $scope.pontos = function(resCerta, resposta){
                 if(resCerta === resposta){

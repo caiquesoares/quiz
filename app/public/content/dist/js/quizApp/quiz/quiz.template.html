@@ -1,18 +1,26 @@
 <div id="quiz">
-    <h1>
-        PONTOS: {{ pontosTotalizados }}
-    </h1>
+
     <div class="numQuestoes">
         <ul>
             <li ng-repeat="num in numQuestoes" ng-bind="num" ng-class="{'ativa' : num == numAtivada}"></li>
         </ul>
     </div>
-    <div class="questao">
+    <div class="questao" ng-if="aparecerQuestao">
         <div class="pergunta">{{ questaoAtivada.label}} </div>
         <div class="opcoes">
-            <button ng-repeat="opcao in questaoAtivada.opcoes" ng-click="pontos(questaoAtivada.resposta, opcao.id); questaoAtiva(numAtivada + 1)" class="btn btn-primary">
+            <button ng-repeat="opcao in questaoAtivada.opcoes" ng-click="pontos(questaoAtivada.resposta, opcao.id); transicaoQuestao(numAtivada + 1)" class="btn btn-primary">
                 {{ opcao.label }}
             </button>
         </div>
     </div>
+    <div ng-if="!aparecerQuestao">
+        <div class="loading">
+            <i class="fa fa-spin fa-refresh"></i>
+        </div>
+        {{ mensagemResposta }}
+           <h1>
+            PONTOS: {{ pontosTotalizados }}
+        </h1>
+    </div>
+
 </div>

@@ -202,3 +202,7 @@ header .acessar nav ul li a:hover {
   display: block;
   width: 100%;
 }
+.loading {
+  font-size: 25px;
+  color: #b0325f;
+}
