@@ -46,7 +46,12 @@
 /*BORDAS*/
 /*DEGRADE*/
 .var-degrade {
-  background: #ddd !important;
+  background: #8A2387;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 object {
   width: 100%;
@@ -55,7 +60,12 @@ object {
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: #ddd !important;
+  background: #8A2387;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 a,
 a:hover {
@@ -78,6 +88,61 @@ h5 {
   color: #b0325f;
   font-weight: 600 !important;
   text-shadow: 1px 1px 1px #b0325f;
+}
+.row-flex {
+  display: flex;
+  width: 100%;
+}
+.row-flex.cabecalho {
+  background: #ddd;
+}
+.row-flex.linha {
+  border-bottom: 1px solid #ddd;
+}
+.row-flex.linha:nth-child(odd) {
+  background: #f1f1f1;
+}
+.row-flex .flex-1 {
+  flex: 1;
+}
+.row-flex .flex-2 {
+  flex: 2;
+}
+.row-flex .flex-3 {
+  flex: 3;
+}
+.row-flex .flex-4 {
+  flex: 4;
+}
+.row-flex .flex-5 {
+  flex: 5;
+}
+.row-flex .flex-6 {
+  flex: 6;
+}
+.row-flex .flex-7 {
+  flex: 7;
+}
+.row-flex .flex-8 {
+  flex: 8;
+}
+.row-flex .flex-9 {
+  flex: 9;
+}
+.row-flex .flex-10 {
+  flex: 10;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.justify {
+  text-align: justify;
 }
 footer {
   color: #fff;

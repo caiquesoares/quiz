@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="/content/dist/css/main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link  rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="/content/dist/js/angular.js"></script>
+    <script src="/content/dist/js/quizApp/app.quiz.module.js"></script>
+    <script src="/content/dist/js/quizApp/quiz/quiz.module.js"></script>
+    <script src="/content/dist/js/quizApp/quiz/quiz.component.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/content/dist/js/main.js"></script>
+</head>
+<body>
+<div data-include="/includes/header"></div>
+<div class="container" ng-app="quizApp">
+    <div id="content">
+        <div id="cadastro">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-5">
+                    <h2>
+                        Começe a jogar!
+                    </h2>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odit, pariatur. Accusantium distinctio fugit in nostrum quisquam. Doloremque error excepturi fuga, fugit impedit minima molestiae officiis repellendus soluta vel voluptatem!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, odit, pariatur. Accusantium distinctio fugit in nostrum quisquam. Doloremque error excepturi fuga, fugit impedit minima molestiae officiis repellendus soluta vel voluptatem!</p>
+                    </div>
+                    <div>
+                        <h4>Já é cadastrado?</h4>
+                        <div>
+                            <a href="/pages/acessar.html" class="btn btn-primary">Acessar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="formulario">
+                        <div class="titulo">
+
+                        </div>
+                        <div class="campos">
+                            <form>
+                                <div class="form-group">
+                                    <label for="nomeCompleto">Nome Completo</label>
+                                    <input type="email" class="form-control" id="nomeCompleto" placeholder="Informe seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="nomeCompleto">Apelido</label>
+                                    <input type="email" class="form-control" id="apelido" placeholder="Informe seu nome">
+                                    <small id="ajudaApelido" class="form-text text-muted">É necessário informar um e-mail válido.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="emailValido">E-mail</label>
+                                    <input type="email" class="form-control" id="emailValido" aria-describedby="ajudaEmail" placeholder="Enter email">
+                                    <small id="ajudaEmail" class="form-text text-muted">É necessário informar um e-mail válido.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="controles">
+                            <a href="/pages/acessar.html" class="btn btn-primary">Cadastrar</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-include="/includes/footer"></div>
+</body>
+</html>
