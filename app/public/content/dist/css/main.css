@@ -46,12 +46,7 @@
 /*BORDAS*/
 /*DEGRADE*/
 .var-degrade {
-  background: #8A2387;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F27121, #E94057, #8A2387);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #111 !important;
 }
 object {
   width: 100%;
@@ -60,12 +55,7 @@ object {
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background: #8A2387;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F27121, #E94057, #8A2387);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #111 !important;
 }
 a,
 a:hover {
@@ -85,9 +75,11 @@ h2,
 h3,
 h4,
 h5 {
-  color: #b0325f;
+  color: #ff6000;
   font-weight: 600 !important;
-  text-shadow: 1px 1px 1px #b0325f;
+}
+.btn-primary {
+  background: #ff6000 !important;
 }
 .row-flex {
   display: flex;
@@ -182,7 +174,7 @@ header .menu nav ul li a {
   border: 1px solid transparent;
 }
 header .menu nav ul li a:hover {
-  border: 1px solid #fff;
+  border: 1px solid #ff6000;
   border-radius: 4px;
   text-decoration: none;
 }
@@ -215,7 +207,7 @@ header .acessar nav ul li a:hover {
   border-radius: 4px;
   text-decoration: none;
   background: #ddd;
-  color: #b0325f;
+  color: #ff6000;
 }
 #home #carousel {
   margin: 10px -20px 0;
@@ -251,7 +243,7 @@ header .acessar nav ul li a:hover {
   margin: 5px 10px;
 }
 #quiz .numQuestoes ul li.ativa {
-  background: #b0325f;
+  background: #ff6000;
 }
 #quiz .questao {
   margin-bottom: 30px;
@@ -269,5 +261,5 @@ header .acessar nav ul li a:hover {
 }
 .loading {
   font-size: 25px;
-  color: #b0325f;
+  color: #ff6000;
 }
